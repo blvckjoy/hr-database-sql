@@ -30,6 +30,8 @@ The HR database consists of three main tables:
   - `department_id` in `employees` references `departments`.
   - `job_id` in `employees` references `jobs`.
 
+![ERD image](ERD.svg)
+
 ## 🚀 Getting Started
 
 You can use these scripts with any relational database system (MySQL, PostgreSQL, SQLite, etc.).
