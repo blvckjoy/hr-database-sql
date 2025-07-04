@@ -25,6 +25,10 @@ The HR database consists of three main tables:
 
 - Each employee belongs to one department and has one job.
 - Departments and jobs can have multiple employees.
+- **Primary Keys (PK):** Each table has a unique primary key (`employee_id`, `department_id`, `job_id`).
+- **Foreign Keys (FK):**  
+  - `department_id` in `employees` references `departments`.
+  - `job_id` in `employees` references `jobs`.
 
 ## 🚀 Getting Started
 
