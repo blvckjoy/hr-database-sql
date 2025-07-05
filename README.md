@@ -34,7 +34,6 @@ The HR database consists of three main tables:
 
 ## 🚀 Getting Started
 
-You can use these scripts with any relational database system (MySQL, PostgreSQL, SQLite, etc.).
 
 ### 1. Clone This Repo
 
@@ -54,6 +53,10 @@ Run the commands in `Insert_Queries.sql` to populate the tables.
 ### 4. Practice SQL
 
 Try the queries in `Exercises.sql` or write your own!
+
+## Requirements
+
+- SQL Server or compatible database system that supports T-SQL.
 
 ## 💡 Example Practice Questions
 
