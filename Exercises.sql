@@ -19,7 +19,7 @@ SELECT
 FROM employees AS emp
     JOIN departments AS dept
     ON emp.department_id = dept.department_id
-WHERE department_name = 'HR';
+WHERE dept.department_name = 'HR';
 
 --Show the names and hire dates of employees hired after January 1, 2021
 SELECT
@@ -65,16 +65,16 @@ FROM departments AS dept
     ON dept.department_id = emp.department_id
     JOIN jobs AS job
     ON emp.job_id = job.job_id
-WHERE department_name = 'IT';
+WHERE dept.department_name = 'IT';
 
 --Display the total number of employees in each department
 SELECT
     dept.department_name,
-    COUNT(employee_id) AS total_employees
+    COUNT(emp.employee_id) AS total_employees
 FROM employees AS emp
     JOIN departments AS dept
     ON emp.department_id = dept.department_id
-GROUP BY department_name;
+GROUP BY dept.department_name;
 
 --Show the highest salary in each department
 SELECT
@@ -91,11 +91,11 @@ SELECT
     emp.first_name,
     emp.last_name,
     dept.department_name,
-    location
+    dept.location
 FROM employees AS emp
     JOIN departments AS dept
     ON emp.department_id = dept.department_id
-ORDER BY department_name;
+ORDER BY dept.department_name;
 
 --Find the average salary for each job title
 SELECT
